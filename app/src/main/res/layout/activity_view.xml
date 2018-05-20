@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aviro.ospc.View">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Industry List"
+        android:textSize="25dp"
+        android:id="@+id/industrylist"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/industrylist"
+        android:layout_marginTop="10dp"
+        android:text="Search Plant"
+        android:textSize="15dp"
+        android:background="#78aff2"
+        android:textColor="@android:color/white"
+        android:id="@+id/selectplant"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Industry Category"
+        android:layout_below="@+id/selectplant"
+        android:textSize="15dp"
+        android:id="@+id/catergory"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/catergory"
+        android:layout_below="@+id/selectplant"
+        android:text="Industry Status"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        />
+    <Spinner
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catergory"
+        android:layout_marginTop="10dp"
+        android:id="@+id/categoryspinner"
+        android:entries="@array/Category"></Spinner>
+    <Spinner
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catergory"
+        android:layout_toRightOf="@+id/categoryspinner"
+        android:id="@+id/statusspinner"
+        android:layout_marginTop="10dp"
+        android:entries="@array/Status"></Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/categoryspinner"
+        android:id="@+id/submit"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/submit"
+        android:layout_below="@+id/categoryspinner"
+        android:id="@+id/clear"
+        />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tableheader">
+        <TableRow
+            android:background="@android:color/holo_blue_dark"
+            android:layout_height="15dp">
+            <TextView
+                android:text="S.No.  "
+                android:gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="  Industry Name  "
+                android:gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="  Address "
+                android:gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text=" Contact Person "
+                android:gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="  Mobile no."
+                android:gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableheader">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableheader"
+            android:layout_marginTop="5dp">
+        </TableLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

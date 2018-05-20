@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aviro.ospc.Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+
+                        android:id="@+id/industry_count"
+                        android:layout_width="122dp"
+                        android:layout_height="69dp"
+                        android:backgroundTint="@android:color/holo_purple"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Industry Count"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/station_count"
+                        android:layout_width="122dp"
+                        android:layout_height="69dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Station Count"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/user_count"
+                        android:layout_width="122dp"
+                        android:layout_height="69dp"
+                        android:backgroundTint="@android:color/holo_green_light"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="USER COUNT"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/industry_online"
+                        android:layout_width="122dp"
+                        android:layout_height="69dp"
+                        android:backgroundTint="@android:color/holo_blue_bright"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Industry Online"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/industry_offline"
+                        android:layout_width="122dp"
+                        android:layout_height="69dp"
+                        android:backgroundTint="@android:color/holo_green_light"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Industry Offline"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/industry_delayed"
+                        android:layout_width="122dp"
+                        android:layout_height="69dp"
+                        android:backgroundTint="@android:color/holo_green_light"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Industry Delayed"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#333131"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:prompt="@string/Select_State">
+
+                    </Spinner>
+
+                    <Spinner
+                        android:id="@+id/spin3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/spin2"
+                        android:layout_toRightOf="@+id/spin2"
+                        android:prompt="@string/Select_Industry_Type">
+
+                    </Spinner>
+
+                    <Spinner
+                        android:id="@+id/spin4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/spin3"
+                        android:layout_toRightOf="@+id/spin3"
+                        android:prompt="@string/Industry_Name">
+
+                    </Spinner>
+
+                    <Spinner
+                        android:id="@+id/spin5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/spin4"
+                        android:layout_toRightOf="@+id/spin4"
+                        android:entries="@array/Analysis"
+                        android:prompt="@string/Analysis"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spin6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/spin5"
+                        android:layout_toRightOf="@+id/spin5"
+                        android:prompt="@string/Station_Name">
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <!--<fragment-->
+                <!--android:id="@+id/maps"-->
+                <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!---->
+                <!--tools:context="com.example.maps.Main2Activity"-->
+                <!--tools:layout="@android:layout/activity_list_item"-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/maps"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/horizontalScrollView"
+                android:layout_weight="1"
+                tools:layout="@android:layout/activity_list_item"
+                tools:context="com.example.aviro.ospc.Main2Activity" />
+
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

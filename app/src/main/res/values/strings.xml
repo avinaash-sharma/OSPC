@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="IP">http://192.168.43.156:8181/os/</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="Analyzer">
+        <item>Not Selected</item>>
+        <item>AAQ</item>
+        <item>Stack</item>
+        <item>water</item>
+    </string-array>
+    <string-array name="Plant_name">
+        <item>HINDALCO Ltd.,Smelter Plant</item>
+    </string-array>
+    <string-array name="Save_as">
+        <item>.pdf</item>
+        <item>.xsl</item>
+    </string-array>
+    <string-array name="Category">
+        <item>Aluminium Smelting</item>
+    </string-array>
+    <string-array name="Status">
+        <item>Delayed</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="Select_State">Select State</string>
+    <string-array name="Select_State">
+        <item>Select State</item>
+        <item>Odisha</item>
+        <item>Chennai</item>
+    </string-array>
+    <string name="Select_Industry_Type">Select Industry Type</string>
+    <string-array name="Select_Industry_Type">
+        <item>Industry Type</item>
+        <item>Coal</item>
+        <item>Steel</item>
+    </string-array>
+    <string name="Industry_Name">Industry name</string>
+    <string-array name="Industry_Name">
+        <item>Industry Name</item>
+        <item>Nalco</item>
+        <item>Tata</item>
+    </string-array>
+    <string name="Analysis">Analysis</string>
+    <string-array name="Analysis">
+        <item>AAQ</item>
+        <item>STACK</item>
+        <item>WATER</item>
+    </string-array>
+    <string name="Station_Name">Station Name</string>
+    <string-array name="Station_Name">
+        <item>Station Name</item>
+        <item>All</item>
+        <item>Something</item>
+    </string-array>
+
+</resources>

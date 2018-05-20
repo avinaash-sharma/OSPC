@@ -1,0 +1,3 @@
+SELECT DATE_FORMAT(recorded_time, '%b-%Y 5d/%m.%Y') TIME,station_id,parameter_code,recorded_level,min_recorded_level,max_recorded_level,recorded_time FROM db_migrate_pollutant_level_data_2018_5 where recorded_time=2 AND DATE(recorded_time) BETWEEN '2018-01-03'  AND '2018-02-17' AND plant_id='hindalco' AND analyzer='Stack' AND station_id IN  ('CEMS-1','CEMS-2','CEMS-3','CEMS-4','CEMS-5')
+AND parameter_code IN ('HF','PM','PM10','PM2.5')
+ORDER BY station_id,parameter_code, DATE(recorded_time)

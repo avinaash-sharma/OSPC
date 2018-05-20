@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_adhoc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aviro.ospc.Adhoc">
+
+
+    -<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    -
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        -
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/aggregation"
+            android:layout_toLeftOf="@+id/aggregation"
+            android:layout_toRightOf="@+id/aggregation"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hourly" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Daily" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monthly" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/aggregation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="Aggregation : "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/fromdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/aggregation"
+            android:layout_marginTop="18dp"
+            android:text="From Date"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/todate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fromdate"
+            android:layout_alignBottom="@+id/fromdate"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/saveasspinner"
+            android:layout_toRightOf="@+id/saveasspinner"
+            android:text="To Date"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/fromdatetext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fromdate"
+            android:ems="10"
+            android:hint="yyyy-mm-dd"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/todatetext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/todate"
+            android:layout_alignStart="@+id/todate"
+            android:layout_below="@+id/fromdate"
+            android:ems="10"
+            android:hint="yyyy-mm-dd"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/plantname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromdatetext"
+            android:layout_marginTop="5dp"
+            android:text="Plant Name:"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/plantnamespinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plantname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:entries="@array/Plant_name"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/analyzer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plantnamespinner"
+            android:layout_marginTop="5dp"
+            android:text="Analyzers:"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/analyzerspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/analyzer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:entries="@array/Analyzer" />
+
+        <TextView
+            android:id="@+id/station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/allStations"
+            android:layout_alignBottom="@+id/allStations"
+            android:layout_alignEnd="@+id/fromdate"
+            android:layout_alignRight="@+id/fromdate"
+            android:text="Stations:"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/allStations">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/allStations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/selectAll"
+            android:layout_alignStart="@+id/selectAll"
+            android:layout_below="@+id/r2"
+            android:text="Select All" />
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pollutant">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearLayoutr2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical">-->
+
+                    <LinearLayout
+                        android:id="@+id/innerLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                <!--</LinearLayout>-->
+            </ScrollView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pollutant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/analyzerspinner"
+            android:text="Pollutants:"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pollutant"
+            android:layout_alignBottom="@+id/pollutant"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/todate"
+            android:layout_toRightOf="@+id/todate"
+            android:text="Select All" />
+
+        <TextView
+            android:id="@+id/saveas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1"
+            android:layout_marginTop="5dp"
+            android:text="Save as:"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/saveasspinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/saveas"
+            android:entries="@array/Save_as"></Spinner>
+
+        <TextView
+            android:id="@+id/chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveas"
+            android:layout_marginTop="5dp"
+            android:text="Chart:"
+            android:textSize="15dp" />
+
+
+        -
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveas"
+            android:layout_toRightOf="@+id/chart"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No chart" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trend" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/onlineview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chart"
+            android:layout_marginTop="15dp"
+            android:onClick="onlineview"
+            android:text="Online View" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/onlineview"
+            android:layout_toEndOf="@+id/onlineview"
+            android:layout_toRightOf="@+id/onlineview"
+            android:onClick="Download"
+            android:text="Download" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

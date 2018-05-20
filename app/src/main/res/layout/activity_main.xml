@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aviro.ospc.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/odisha"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="361dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="USERNAME"
+        android:textColor="#ed0c0c"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:id="@+id/editTextusername" />
+
+    <EditText
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:layout_below="@+id/editTextusername"
+        android:layout_marginTop="13dp"
+        android:id="@+id/editTextpassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/images"
+        android:layout_below="@+id/editTextpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:onClick="login_btnclick"
+        android:id="@+id/imageButton3" />
+
+    <CheckedTextView
+        android:text="Forget login?"
+        android:textColor="#e11818"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="26dp"
+        android:id="@+id/checkedTextView" />
+
+    <TextView
+        android:text="Don’t have an account?"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageButton3"
+        android:id="@+id/textView" />
+
+    <CheckedTextView
+        android:text="Sign Up"
+        android:textSize="15sp"
+        android:textColor="#ea1818"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:id="@+id/checkedTextView2" />
+
+</RelativeLayout>
